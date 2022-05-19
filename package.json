@@ -1,0 +1,29 @@
+{
+    "name": "receipt-generator",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "dev": "nodemon src/index.ts",
+        "start": "node dist/index.js",
+        "build": "rm -rf dist && rollup -c"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "@rollup/plugin-typescript": "^8.3.2",
+        "@types/nodemailer": "^6.4.4",
+        "@types/pdfkit": "^0.12.6",
+        "nodemon": "^2.0.16",
+        "rollup": "^2.73.0",
+        "rollup-plugin-terser": "^7.0.2",
+        "typescript": "^4.6.4"
+    },
+    "dependencies": {
+        "dotenv": "^16.0.1",
+        "express": "^4.18.1",
+        "nodemailer": "^6.7.5",
+        "pdfkit": "^0.13.0"
+    }
+}
