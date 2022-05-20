@@ -32,7 +32,7 @@ app.post("/send/email", (req, res) => {
     sendEmail
       .sendEmail()
       .then((_) => {
-        res.send("Hello World");
+        res.send("Invoice sent");
       })
       .catch((err) => {
         console.log(err);
